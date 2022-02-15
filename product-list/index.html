@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan | Home</title>
+    <link rel="stylesheet" href="https://paperui.netlify.app/components.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-header">
+        <div class="brand-name">ARTISAN</div>
+        <ul class="menu-list">
+            <li class="menu-list-items"><a href="#"><i class="material-icons">search</i></a></li>
+            <li class="menu-list-items"><a href="#"><i class="material-icons">favorite_border</i></a></li>
+            <li class="menu-list-items"><a href="#"><i class="material-icons-outlined">local_mall</i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="filter-pane">
+            <h4>PRICE</h4>
+            <ul>
+                <li>
+                    <input type="radio" name="price-range" id="htl" />
+                    <label for="htl">High to Low</label>
+                </li>
+                <li>
+                    <input type="radio" name="price-range" id="lth" />
+                    <label for="lth">Low to High</label>
+                </li>
+            </ul>
+            <h4>AVAILABILITY</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="product-availability" id="stock-empty" />
+                    <label for="stock-empty">Include Out of Stock</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="product-availability" id="fast-delivery" />
+                    <label for="fast-delivery">Fast Delivery Only</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="product-availability" id="on-sale" />
+                    <label for="on-sale">On Sale</label>
+                </li>
+            </ul>
+            <h4>CATEGORIES</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="categories" id="paper-cutting" />
+                    <label for="paper-cutting">Paper Cuttings</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="shadow-box" />
+                    <label for="shadow-box">Shadow Box</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="Quilling" />
+                    <label for="Quilling">Quilling</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="layering-art" />
+                    <label for="layering-art">Layering Paper Art</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="origami" />
+                    <label for="origami">Origami</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="kirigami" />
+                    <label for="kirigami">Kirigami</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="3d-origami" />
+                    <label for="3d-origami">3D Origami</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="categories" id="miniatures" />
+                    <label for="miniatures">Miniatures</label>
+                </li>
+            </ul>
+            <h4>RATINGS</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="ratings" id="5star" />
+                    <label for="5star">5 Stars</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="ratings" id="4star" />
+                    <label for="4star">4 Stars</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="ratings" id="3star" />
+                    <label for="3star">3 Stars</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="ratings" id="2-1star" />
+                    <label for="2-1star">Below 3 Stars</label>
+                </li>
+            </ul>
+            <h4>MOUNT TYPE</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="mount-type" id="walls" />
+                    <label for="walls">Wall</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="mount-type" id="table-top" />
+                    <label for="table-top">Table Top</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="mount-type" id="ceiling" />
+                    <label for="ceiling">Ceiling</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="mount-type" id="floor" />
+                    <label for="floor">Floor</label>
+                </li>
+            </ul>
+            <h4>COLOR</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" name="color-type" id="white" />
+                    <label for="white">White</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="color-type" id="yellow" />
+                    <label for="yellow">yellow</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="color-type" id="red" />
+                    <label for="red">Red</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="color-type" id="blue" />
+                    <label for="blue">Blue</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="color-type" id="biege" />
+                    <label for="biege">Biege</label>
+                </li>
+            </ul>
+        </div>
+        <div class="body-pane">
+            <h4>PRODUCTS</h4>
+            <div class="products-list">
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/fox.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Origami Fox</h4>
+                        <p class="prod-cate">A paper folded lion</p>
+                        <p class="prod-det"> Rs.299 <span>Rs. 499 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/rhino.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Origami Rhino</h4>
+                        <p class="prod-cate">A paper folded Rhino</p>
+                        <p class="prod-det"> Rs.499 <span>Rs. 899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/3dorigami.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Rainbow Flower</h4>
+                        <p class="prod-cate">A 3D origami flower</p>
+                        <p class="prod-det"> Rs.899 <span>Rs. 1299 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/hairlady.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Deep Pretty Thoughts</h4>
+                        <p class="prod-cate">A paper cut deep art</p>
+                        <p class="prod-det"> Rs.1299 <span>Rs. 2599 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/rabb.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Flora Rabbit</h4>
+                        <p class="prod-cate">A paper cut rabbit</p>
+                        <p class="prod-det"> Rs.2499 <span>Rs. 3599 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/sh1.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Deep In The Forest</h4>
+                        <p class="prod-cate">A shadow box nightlight</p>
+                        <p class="prod-det"> Rs.5899 <span>Rs. 7899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/sh2.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">My Deer Family</h4>
+                        <p class="prod-cate">A shadow box daylight</p>
+                        <p class="prod-det"> Rs.3899 <span>Rs. 4899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/sh3.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Lone Sea Shore</h4>
+                        <p class="prod-cate">A shadow box night light</p>
+                        <p class="prod-det"> Rs.499 <span>Rs. 6899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/layer1.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Third Eye</h4>
+                        <p class="prod-cate">A layering paper art</p>
+                        <p class="prod-det"> Rs.799 <span>Rs. 899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/layer2.png" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Positivity Inside You</h4>
+                        <p class="prod-cate">A layering paper art</p>
+                        <p class="prod-det"> Rs.699 <span>Rs. 899 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/quill1.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Red Forest</h4>
+                        <p class="prod-cate">Quilling art</p>
+                        <p class="prod-det"> Rs.599 <span>Rs. 869 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/quill2.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Purple Bouquet</h4>
+                        <p class="prod-cate">Quilling art</p>
+                        <p class="prod-det"> Rs.899 <span>Rs. 1199 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/quill3.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Dancing Peacock</h4>
+                        <p class="prod-cate">Quilling art</p>
+                        <p class="prod-det"> Rs.1199 <span>Rs. 1399 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/3dswan.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Love Is In The Air</h4>
+                        <p class="prod-cate">A 3D origami Couple Swan</p>
+                        <p class="prod-det"> Rs.4999 <span>Rs. 5999 </span></p>
+                    </div>
+                </div>
+                <div class="card ecom">
+                    <i class="material-icons">favorite_border</i>
+                    <img src="../images/3dvase.jpg" alt="product-photo">
+                    <div class="prod-details">
+                        <h4 class="prod-head">Flexing Pot</h4>
+                        <p class="prod-cate">A 3D origami flower pot</p>
+                        <p class="prod-det"> Rs.2999 <span>Rs. 3599 </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
