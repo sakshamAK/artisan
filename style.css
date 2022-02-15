@@ -1,0 +1,68 @@
+@import url("./css/color.css");
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    height: 100vh;
+}
+
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.cover-img {
+    width: 30vw;
+    justify-self: flex-end;
+}
+
+h1 {
+    width: 50vw;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 1.2em;
+    color: #19180a;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border-radius: 0;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
