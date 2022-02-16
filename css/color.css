@@ -5,3 +5,8 @@
     --font-secondary: #19180a;
     --accent-color: #e71d36;
 }
+
+
+body {
+    font-family: Roboto, sans-serif;
+}
