@@ -1,0 +1,62 @@
+@import url("../../css/color.css");
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.btn {
+    background: var(--secondary);
+}
+
+.form-grp {
+    justify-content: center;
+    width: 30vw;
+}
+label[for = "forgot-password"] {
+    align-self: flex-end;
+}
+
+label[for="forgot-password"] a{
+    color: var(--primary);
+}
+
+.btn:last-child {
+    background: var(--accent-color);
+    text-align: center;
+}
