@@ -1,0 +1,102 @@
+@import url("../../css/color.css");
+
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 4rem repeat(6, 1fr) 4rem;
+    grid-template-areas: 
+    ". item item item item cart cart ."
+    ;
+}
+
+.cart-items, .cart-payment {
+    grid-area: item;
+    padding: 5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.cart-payment {
+    grid-area: cart;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.badge-h img{
+    width: 100%;
+}
+
+.card .btn {
+    background: var(--accent-color);
+}
+.card .btn:nth-of-type(2) {
+    background: var(--secondary);
+}
+
+.product-count .btn.inc, .product-count .btn.dec {
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0;
+    background: var(--secondary);
+    margin: 0.2rem;
+}
+
+.inc + input {
+    width: 2rem;
+    text-align: center;
+}
+
+.prod-details .btn{
+    width: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+.product-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-payment .card {
+    width: 100%;
+}
+
+.cart-payment .card .prod-details > .total-amt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p.prod-head {
+    color: green;
+}

@@ -1,0 +1,118 @@
+@import url("./css/color.css");
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 1.3rem;
+}
+
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.cover-img {
+    width: 30vw;
+    justify-self: flex-end;
+}
+
+h1 {
+    width: 50vw;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 1.2em;
+    color: #19180a;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border-radius: 0;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+.categories .btn {
+    background-color: var(--secondary);
+}
+
+.categories .btn-grp {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-grp {
+    width: 12rem;
+    height: 15rem;
+    cursor: pointer;
+}
+
+.btn-grp img:nth-child(n):hover {
+    width: 65%;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn-grp img {
+    width: 60%;
+}
+
+.btn-grp a {
+    color: var(--font-secondary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img[src = "./images/cropped-rhino.png"]{
+    width: 100%;
+}
+
+.btn-grp img[src = "./images/cropped-rhino.png"]:hover {
+    width: 105%;
+}
+
+.categ-head {
+    background: var(--primary);
+    width: 100%;
+    color: var(--font-primary);
+    padding: 1rem;
+}

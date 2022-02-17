@@ -1,0 +1,109 @@
+@import url("../css/color.css");
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    padding: 5rem 0;
+    grid-template-columns: 5rem 1fr 4fr 5rem;
+    grid-template-areas: ". sidebar body .";
+}
+
+.filter-pane {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.filter-pane ul li {
+    list-style-type: none;
+    padding: 0.4rem;
+}
+.body-pane {
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.products-list {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.prod-details {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    box-shadow: none;
+}
+
+.ecom {
+    width: 13rem;
+}
+
+.ecom img {
+    width: 100%;
+}
+
+.ecom .material-icons {
+    font-size: 1.3rem;
+}
+
+.ecom .prod-cate {
+    font-size: 0.9rem;
+}
+
+.card .btn {
+    background-color: var(--accent-color);
+    border-radius: 0;
+    padding: 0.5rem 0.8rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+.filter .btn {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0.2rem 0.5rem;
+}
