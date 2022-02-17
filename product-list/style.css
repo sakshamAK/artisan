@@ -90,3 +90,24 @@ a {
 .ecom .prod-cate {
     font-size: 0.9rem;
 }
+
+.card .btn {
+    background-color: var(--accent-color);
+    border-radius: 0;
+    padding: 0.5rem 0.8rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+.filter .btn {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0.2rem 0.5rem;
+}
