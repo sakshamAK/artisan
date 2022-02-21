@@ -6,10 +6,6 @@
     padding: 0 5rem;
 }
 
-.menu-list-items {
-    padding: 1rem;
-}
-
 a {
     color: var(--font-primary);
     text-decoration: none;
@@ -26,12 +22,23 @@ a {
 .brand-name {
     font-weight: 700;
     font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.menu {
+    padding-right: 1rem;
+    display: none;
+}
+
+.close {
+    padding-bottom: 1rem;
+    display: none;
 }
 
 .container {
     display: grid;
     padding: 5rem 0;
-    grid-template-columns: 5rem 1fr 4fr 5rem;
+    grid-template-columns: 5rem 15rem 4fr 5rem;
     grid-template-areas: ". sidebar body .";
 }
 
@@ -106,4 +113,58 @@ a {
     font-weight: bold;
     border-radius: 0;
     padding: 0.2rem 0.5rem;
+}
+
+@media only screen and (max-width: 1105px) {
+    .container {
+        grid-template-columns: 7vw 4fr 7vw;
+        grid-template-areas: ". body ."; 
+        padding: 1rem 0;
+        z-index: -1;  
+    }
+    .products-list {
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .nav-header {
+        z-index: 2;
+    }
+    .filter-pane {
+        position: fixed;
+        background-color: white;
+        padding: 1rem;
+        width: clamp(15rem, 30vw, 50vw);
+        z-index: 1;
+        top: 0;
+        left: -70vw;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    .body-pane {
+        gap: 1rem;
+    }
+    .menu, .close {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-header {
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .material-icons, .material-icons-outlined {
+        font-size: 1.4rem;
+    }
+    .menu-list-items {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 523px) {
+    .ecom {
+        width: 38vw;
+    }
 }

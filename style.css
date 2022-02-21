@@ -15,11 +15,6 @@ body {
     align-self: stretch;
     padding: 0 5rem;
 }
-
-.menu-list-items {
-    padding: 1rem;
-}
-
 a {
     color: var(--font-primary);
 }
@@ -35,6 +30,7 @@ a {
 .brand-name {
     font-weight: 700;
     font-size: 1.2rem;
+    padding: 1rem 0;
 }
 
 .cover-img {
@@ -114,4 +110,34 @@ img[src = "./images/cropped-rhino.png"]{
 .categ-head {
     width: 100%;
     margin: 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-header {
+        padding: 0 2rem;
+    }
+    h1, .cover-img { 
+        width: 80vw;
+    }
+    .cover-img {
+        margin-top: 5rem;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .material-icons, .material-icons-outlined {
+        font-size: 1.4rem;
+    }
+    .menu-list-items {
+        padding: 0.5rem;
+    }
+
+    .categ-head {
+        margin: 0;
+    }
+    .categories {
+        margin: 0;
+    }
+    .btn-grp {
+        width: 40vw;
+    }
 }
