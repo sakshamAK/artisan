@@ -1,0 +1,81 @@
+@import url("../../css/color.css");
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.nav-header {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    align-self: stretch;
+    padding: 0 5rem;
+}
+
+.menu-list-items {
+    padding: 1rem;
+}
+
+a {
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+.menu-list-items:hover {
+    background-color: transparent;
+}
+
+.menu-list-items:hover a i {
+    color: var(--accent-color);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5rem repeat(6, 1fr) 5rem;
+    grid-template-areas: 
+    ". head head head head head head ."
+    ". item item item item item item ."
+    ;
+    padding: 2rem 0;
+}
+
+.wishlist-items {
+    padding: 2rem 0;
+    grid-area: item;
+    display: flex;
+    gap: 3rem;
+}
+
+
+.badge-h img{
+    width: 100%;
+}
+
+.card .btn {
+    background: var(--accent-color);
+}
+.card .btn:nth-of-type(2) {
+    background: var(--secondary);
+}
+.prod-details .btn{
+    width: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.ecom {
+    width: 20rem;
+    font-size: 1.5rem;
+}
+
+.prod-details .prod-det, .prod-details .prod-cate {
+    font-size: 1rem;
+}
+
+h1 {
+    grid-area: head;
+}
