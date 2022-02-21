@@ -1,5 +1,8 @@
 @import url("../../css/color.css");
 
+body {
+    font-family: Roboto, sans-serif;
+}
 .nav-header {
     background-color: var(--primary);
     color: var(--font-primary);
@@ -31,17 +34,17 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 4rem repeat(6, 1fr) 4rem;
+    grid-template-columns: 5rem repeat(6, 1fr) 5rem;
     grid-template-areas: 
+    ". head head head head head head ."
     ". item item item item cart cart ."
     ;
 }
 
 .cart-items, .cart-payment {
     grid-area: item;
-    padding: 5rem 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 .cart-payment {
@@ -99,4 +102,13 @@ a {
 
 p.prod-head {
     color: green;
+}
+
+.ecom {
+    width: 20rem;
+}
+
+.cart-head {
+    grid-area: head;
+    margin: 3rem 0;
 }
